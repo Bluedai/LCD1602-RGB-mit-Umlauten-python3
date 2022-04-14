@@ -88,6 +88,7 @@ class RGB1602:
     if(isinstance(arg,int)):
       arg=str(arg)
 
+    utf=0
     for x in bytearray(arg,'utf-8'):
       if utf == 1:
         utf=0

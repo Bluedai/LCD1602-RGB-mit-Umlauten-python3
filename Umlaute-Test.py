@@ -32,5 +32,5 @@ lcd.setCursor(0, 1)
 lcd.printout("Groß Ä Ö Ü")
  
 # LED Farbe setzen 
-rgb=rgb7
+rgb= rgb7
 lcd.setRGB(rgb[0],rgb[1],rgb[2]);

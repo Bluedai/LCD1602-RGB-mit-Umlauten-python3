@@ -100,6 +100,12 @@ class RGB1602:
           x=225
         elif x == 159: # ß
           x=226
+        elif x == 156: # Ü
+          x=245
+        elif x == 150: # Ö
+          x=239
+        elif x == 132: # Ä
+          x=225
       # Erkennen ob das Zeichen ein utf-8 2 Byte Zeichen ist
       if x == 195:
         utf=1

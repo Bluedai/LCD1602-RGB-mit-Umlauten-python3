@@ -159,3 +159,8 @@ class RGB1602:
 
   def setColorWhite(self):
     self.setRGB(255, 255, 255)
+
+  def createChar(self, location, bitmap):
+        self.write(self.LCD_SETCGRAMADDR | ((location & 7) << 3))
+        self.write(bitmap, True)
+        self.write(self.LCD_SETDDRAMADDR)
